@@ -8,20 +8,51 @@
 
 /* Begin PBXBuildFile section */
 		54DB76C52210BAA100AB0AC2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54DB76C42210BAA100AB0AC2 /* AppDelegate.swift */; };
-		54DB76C72210BAA100AB0AC2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54DB76C62210BAA100AB0AC2 /* ViewController.swift */; };
 		54DB76CA2210BAA100AB0AC2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 54DB76C82210BAA100AB0AC2 /* Main.storyboard */; };
 		54DB76CC2210BAA100AB0AC2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 54DB76CB2210BAA100AB0AC2 /* Assets.xcassets */; };
 		54DB76CF2210BAA100AB0AC2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 54DB76CD2210BAA100AB0AC2 /* LaunchScreen.storyboard */; };
+		54DB76E22210BB0700AB0AC2 /* QRCodeReader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54DB76D72210BB0600AB0AC2 /* QRCodeReader.swift */; };
+		54DB76E32210BB0700AB0AC2 /* QRCodeReaderViewControllerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54DB76D82210BB0600AB0AC2 /* QRCodeReaderViewControllerDelegate.swift */; };
+		54DB76E42210BB0700AB0AC2 /* QRCodeReaderViewContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54DB76D92210BB0600AB0AC2 /* QRCodeReaderViewContainer.swift */; };
+		54DB76E52210BB0700AB0AC2 /* QRCodeReaderViewControllerBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54DB76DA2210BB0600AB0AC2 /* QRCodeReaderViewControllerBuilder.swift */; };
+		54DB76E62210BB0700AB0AC2 /* QRCodeReaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54DB76DB2210BB0600AB0AC2 /* QRCodeReaderView.swift */; };
+		54DB76E72210BB0700AB0AC2 /* QRCodeReaderResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54DB76DC2210BB0600AB0AC2 /* QRCodeReaderResult.swift */; };
+		54DB76E82210BB0700AB0AC2 /* SwitchCameraButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54DB76DE2210BB0600AB0AC2 /* SwitchCameraButton.swift */; };
+		54DB76E92210BB0700AB0AC2 /* QRCodeReaderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54DB76DF2210BB0600AB0AC2 /* QRCodeReaderViewController.swift */; };
+		54DB76EA2210BB0700AB0AC2 /* ToggleTorchButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54DB76E02210BB0600AB0AC2 /* ToggleTorchButton.swift */; };
+		54DB76EB2210BB0700AB0AC2 /* ReaderOverlayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54DB76E12210BB0600AB0AC2 /* ReaderOverlayView.swift */; };
+		54DB76F22210BB1900AB0AC2 /* HelpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54DB76ED2210BB1900AB0AC2 /* HelpView.swift */; };
+		54DB76F32210BB1900AB0AC2 /* FullImageController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54DB76EE2210BB1900AB0AC2 /* FullImageController.swift */; };
+		54DB76F42210BB1900AB0AC2 /* FullScreenController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54DB76EF2210BB1900AB0AC2 /* FullScreenController.swift */; };
+		54DB76F52210BB1900AB0AC2 /* SplitController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54DB76F02210BB1900AB0AC2 /* SplitController.swift */; };
+		54DB76F62210BB1900AB0AC2 /* MenuController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54DB76F12210BB1900AB0AC2 /* MenuController.swift */; };
+		54DB76F92210BB2A00AB0AC2 /* Manual.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 54DB76F82210BB2A00AB0AC2 /* Manual.pdf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		54DB76C12210BAA100AB0AC2 /* MAGNIFIER-APPLICATION.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "MAGNIFIER-APPLICATION.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		54DB76C42210BAA100AB0AC2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		54DB76C62210BAA100AB0AC2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		54DB76C92210BAA100AB0AC2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		54DB76CB2210BAA100AB0AC2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		54DB76CE2210BAA100AB0AC2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		54DB76D02210BAA100AB0AC2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		54DB76D72210BB0600AB0AC2 /* QRCodeReader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QRCodeReader.swift; sourceTree = "<group>"; };
+		54DB76D82210BB0600AB0AC2 /* QRCodeReaderViewControllerDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QRCodeReaderViewControllerDelegate.swift; sourceTree = "<group>"; };
+		54DB76D92210BB0600AB0AC2 /* QRCodeReaderViewContainer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QRCodeReaderViewContainer.swift; sourceTree = "<group>"; };
+		54DB76DA2210BB0600AB0AC2 /* QRCodeReaderViewControllerBuilder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QRCodeReaderViewControllerBuilder.swift; sourceTree = "<group>"; };
+		54DB76DB2210BB0600AB0AC2 /* QRCodeReaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QRCodeReaderView.swift; sourceTree = "<group>"; };
+		54DB76DC2210BB0600AB0AC2 /* QRCodeReaderResult.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QRCodeReaderResult.swift; sourceTree = "<group>"; };
+		54DB76DD2210BB0600AB0AC2 /* QRCodeReader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QRCodeReader.h; sourceTree = "<group>"; };
+		54DB76DE2210BB0600AB0AC2 /* SwitchCameraButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwitchCameraButton.swift; sourceTree = "<group>"; };
+		54DB76DF2210BB0600AB0AC2 /* QRCodeReaderViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QRCodeReaderViewController.swift; sourceTree = "<group>"; };
+		54DB76E02210BB0600AB0AC2 /* ToggleTorchButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ToggleTorchButton.swift; sourceTree = "<group>"; };
+		54DB76E12210BB0600AB0AC2 /* ReaderOverlayView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReaderOverlayView.swift; sourceTree = "<group>"; };
+		54DB76ED2210BB1900AB0AC2 /* HelpView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HelpView.swift; sourceTree = "<group>"; };
+		54DB76EE2210BB1900AB0AC2 /* FullImageController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FullImageController.swift; sourceTree = "<group>"; };
+		54DB76EF2210BB1900AB0AC2 /* FullScreenController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FullScreenController.swift; sourceTree = "<group>"; };
+		54DB76F02210BB1900AB0AC2 /* SplitController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SplitController.swift; sourceTree = "<group>"; };
+		54DB76F12210BB1900AB0AC2 /* MenuController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuController.swift; sourceTree = "<group>"; };
+		54DB76F82210BB2A00AB0AC2 /* Manual.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = Manual.pdf; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -38,6 +69,8 @@
 		54DB76B82210BAA100AB0AC2 = {
 			isa = PBXGroup;
 			children = (
+				54DB76EC2210BB1900AB0AC2 /* UI-SOURCES */,
+				54DB76D62210BB0600AB0AC2 /* QR-SOURCES */,
 				54DB76C32210BAA100AB0AC2 /* MAGNIFIER-APPLICATION */,
 				54DB76C22210BAA100AB0AC2 /* Products */,
 			);
@@ -55,7 +88,6 @@
 			isa = PBXGroup;
 			children = (
 				54DB76C42210BAA100AB0AC2 /* AppDelegate.swift */,
-				54DB76C62210BAA100AB0AC2 /* ViewController.swift */,
 				54DB76C82210BAA100AB0AC2 /* Main.storyboard */,
 				54DB76CB2210BAA100AB0AC2 /* Assets.xcassets */,
 				54DB76CD2210BAA100AB0AC2 /* LaunchScreen.storyboard */,
@@ -63,6 +95,46 @@
 			);
 			path = "MAGNIFIER-APPLICATION";
 			sourceTree = "<group>";
+		};
+		54DB76D62210BB0600AB0AC2 /* QR-SOURCES */ = {
+			isa = PBXGroup;
+			children = (
+				54DB76D72210BB0600AB0AC2 /* QRCodeReader.swift */,
+				54DB76D82210BB0600AB0AC2 /* QRCodeReaderViewControllerDelegate.swift */,
+				54DB76D92210BB0600AB0AC2 /* QRCodeReaderViewContainer.swift */,
+				54DB76DA2210BB0600AB0AC2 /* QRCodeReaderViewControllerBuilder.swift */,
+				54DB76DB2210BB0600AB0AC2 /* QRCodeReaderView.swift */,
+				54DB76DC2210BB0600AB0AC2 /* QRCodeReaderResult.swift */,
+				54DB76DD2210BB0600AB0AC2 /* QRCodeReader.h */,
+				54DB76DE2210BB0600AB0AC2 /* SwitchCameraButton.swift */,
+				54DB76DF2210BB0600AB0AC2 /* QRCodeReaderViewController.swift */,
+				54DB76E02210BB0600AB0AC2 /* ToggleTorchButton.swift */,
+				54DB76E12210BB0600AB0AC2 /* ReaderOverlayView.swift */,
+			);
+			path = "QR-SOURCES";
+			sourceTree = SOURCE_ROOT;
+		};
+		54DB76EC2210BB1900AB0AC2 /* UI-SOURCES */ = {
+			isa = PBXGroup;
+			children = (
+				54DB76F72210BB2A00AB0AC2 /* USER-MANUAL */,
+				54DB76ED2210BB1900AB0AC2 /* HelpView.swift */,
+				54DB76EE2210BB1900AB0AC2 /* FullImageController.swift */,
+				54DB76EF2210BB1900AB0AC2 /* FullScreenController.swift */,
+				54DB76F02210BB1900AB0AC2 /* SplitController.swift */,
+				54DB76F12210BB1900AB0AC2 /* MenuController.swift */,
+			);
+			path = "UI-SOURCES";
+			sourceTree = SOURCE_ROOT;
+		};
+		54DB76F72210BB2A00AB0AC2 /* USER-MANUAL */ = {
+			isa = PBXGroup;
+			children = (
+				54DB76F82210BB2A00AB0AC2 /* Manual.pdf */,
+			);
+			name = "USER-MANUAL";
+			path = "UI-SOURCES/USER-MANUAL";
+			sourceTree = SOURCE_ROOT;
 		};
 /* End PBXGroup section */
 
@@ -122,6 +194,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				54DB76F92210BB2A00AB0AC2 /* Manual.pdf in Resources */,
 				54DB76CF2210BAA100AB0AC2 /* LaunchScreen.storyboard in Resources */,
 				54DB76CC2210BAA100AB0AC2 /* Assets.xcassets in Resources */,
 				54DB76CA2210BAA100AB0AC2 /* Main.storyboard in Resources */,
@@ -135,8 +208,22 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				54DB76C72210BAA100AB0AC2 /* ViewController.swift in Sources */,
+				54DB76F52210BB1900AB0AC2 /* SplitController.swift in Sources */,
+				54DB76F62210BB1900AB0AC2 /* MenuController.swift in Sources */,
+				54DB76F42210BB1900AB0AC2 /* FullScreenController.swift in Sources */,
+				54DB76E42210BB0700AB0AC2 /* QRCodeReaderViewContainer.swift in Sources */,
+				54DB76F22210BB1900AB0AC2 /* HelpView.swift in Sources */,
+				54DB76E52210BB0700AB0AC2 /* QRCodeReaderViewControllerBuilder.swift in Sources */,
+				54DB76E72210BB0700AB0AC2 /* QRCodeReaderResult.swift in Sources */,
+				54DB76E82210BB0700AB0AC2 /* SwitchCameraButton.swift in Sources */,
+				54DB76F32210BB1900AB0AC2 /* FullImageController.swift in Sources */,
+				54DB76E22210BB0700AB0AC2 /* QRCodeReader.swift in Sources */,
+				54DB76EB2210BB0700AB0AC2 /* ReaderOverlayView.swift in Sources */,
+				54DB76E92210BB0700AB0AC2 /* QRCodeReaderViewController.swift in Sources */,
+				54DB76E62210BB0700AB0AC2 /* QRCodeReaderView.swift in Sources */,
+				54DB76E32210BB0700AB0AC2 /* QRCodeReaderViewControllerDelegate.swift in Sources */,
 				54DB76C52210BAA100AB0AC2 /* AppDelegate.swift in Sources */,
+				54DB76EA2210BB0700AB0AC2 /* ToggleTorchButton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
