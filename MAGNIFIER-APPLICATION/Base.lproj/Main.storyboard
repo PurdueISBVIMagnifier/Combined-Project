@@ -19,7 +19,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <wkWebView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zuR-pL-VLz">
-                                <rect key="frame" x="0.0" y="20" width="510" height="748"/>
+                                <rect key="frame" x="0.0" y="20" width="512" height="748"/>
                                 <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <gestureRecognizers/>
                                 <wkWebViewConfiguration key="configuration">
@@ -28,14 +28,14 @@
                                 </wkWebViewConfiguration>
                             </wkWebView>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" maximumZoomScale="100" translatesAutoresizingMaskIntoConstraints="NO" id="b3T-FE-i6O">
-                                <rect key="frame" x="518" y="20" width="506" height="748"/>
+                                <rect key="frame" x="520" y="20" width="504" height="748"/>
                                 <subviews>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="uWU-7Z-GdP">
-                                        <rect key="frame" x="0.0" y="0.0" width="506" height="748"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="504" height="748"/>
                                         <gestureRecognizers/>
                                     </imageView>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RKB-yJ-saV">
-                                        <rect key="frame" x="411" y="8" width="87" height="54"/>
+                                        <rect key="frame" x="409" y="20" width="75" height="42"/>
                                         <accessibility key="accessibilityConfiguration">
                                             <accessibilityTraits key="traits" button="YES" image="YES"/>
                                         </accessibility>
@@ -45,7 +45,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vor-Cj-KcU">
-                                        <rect key="frame" x="0.0" y="670" width="506" height="78"/>
+                                        <rect key="frame" x="0.0" y="670" width="504" height="78"/>
                                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                         <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="32"/>
                                         <state key="normal" title="FULL SIZE">
@@ -61,11 +61,11 @@
                                 <constraints>
                                     <constraint firstItem="Vor-Cj-KcU" firstAttribute="top" secondItem="b3T-FE-i6O" secondAttribute="bottom" constant="-78" id="23r-fq-3yV"/>
                                     <constraint firstAttribute="bottom" secondItem="Vor-Cj-KcU" secondAttribute="bottom" id="BA1-10-VNL"/>
-                                    <constraint firstItem="RKB-yJ-saV" firstAttribute="top" secondItem="b3T-FE-i6O" secondAttribute="top" constant="8" id="Hc2-Mg-3gr"/>
+                                    <constraint firstItem="RKB-yJ-saV" firstAttribute="top" secondItem="b3T-FE-i6O" secondAttribute="top" constant="20" id="Hc2-Mg-3gr"/>
                                     <constraint firstItem="uWU-7Z-GdP" firstAttribute="centerX" secondItem="b3T-FE-i6O" secondAttribute="centerX" id="LC3-t3-ZtR"/>
                                     <constraint firstItem="uWU-7Z-GdP" firstAttribute="top" secondItem="b3T-FE-i6O" secondAttribute="top" id="RiG-V8-a2q"/>
                                     <constraint firstItem="RKB-yJ-saV" firstAttribute="leading" secondItem="b3T-FE-i6O" secondAttribute="trailing" constant="-95" id="cM3-XZ-sFx"/>
-                                    <constraint firstAttribute="trailing" secondItem="RKB-yJ-saV" secondAttribute="trailing" constant="8" id="d03-aG-kq9"/>
+                                    <constraint firstAttribute="trailing" secondItem="RKB-yJ-saV" secondAttribute="trailing" constant="20" id="d03-aG-kq9"/>
                                     <constraint firstAttribute="trailing" secondItem="uWU-7Z-GdP" secondAttribute="trailing" id="fOB-9R-uk5"/>
                                     <constraint firstItem="Vor-Cj-KcU" firstAttribute="leading" secondItem="b3T-FE-i6O" secondAttribute="leading" id="i2T-BE-l2p"/>
                                     <constraint firstItem="uWU-7Z-GdP" firstAttribute="leading" secondItem="b3T-FE-i6O" secondAttribute="leading" id="iQV-NT-2Au"/>
@@ -91,7 +91,7 @@
                         <constraints>
                             <constraint firstItem="zuR-pL-VLz" firstAttribute="bottom" secondItem="GEU-Md-V0p" secondAttribute="bottom" id="2N1-Mg-jNs"/>
                             <constraint firstItem="zuR-pL-VLz" firstAttribute="top" secondItem="GEU-Md-V0p" secondAttribute="top" id="4Ip-jK-C0O"/>
-                            <constraint firstItem="GEU-Md-V0p" firstAttribute="trailing" secondItem="zuR-pL-VLz" secondAttribute="trailing" constant="514" id="94F-hs-yoK"/>
+                            <constraint firstItem="zuR-pL-VLz" firstAttribute="trailing" secondItem="GEU-Md-V0p" secondAttribute="centerX" id="94F-hs-yoK"/>
                             <constraint firstItem="YT6-m0-Zum" firstAttribute="bottom" secondItem="GEU-Md-V0p" secondAttribute="top" constant="62" id="ITx-1D-TTy"/>
                             <constraint firstItem="b3T-FE-i6O" firstAttribute="top" secondItem="zuR-pL-VLz" secondAttribute="top" id="L3R-tK-KyX"/>
                             <constraint firstItem="YT6-m0-Zum" firstAttribute="leading" secondItem="GEU-Md-V0p" secondAttribute="leading" id="Pmq-LD-BWG"/>
@@ -138,7 +138,7 @@
                                 </wkWebViewConfiguration>
                             </wkWebView>
                             <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oq8-oR-Ds7">
-                                <rect key="frame" x="396" y="670" width="225" height="88"/>
+                                <rect key="frame" x="463" y="670" width="98" height="88"/>
                                 <accessibility key="accessibilityConfiguration">
                                     <accessibilityTraits key="traits" button="YES" image="YES"/>
                                 </accessibility>
@@ -173,10 +173,12 @@
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="AE8-7n-rEy" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="bottom" constant="-98" id="2ON-Wq-B4d"/>
-                            <constraint firstItem="oq8-oR-Ds7" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="trailing" constant="-515.5" id="FKN-ut-OWQ"/>
+                            <constraint firstItem="oq8-oR-Ds7" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="FKN-ut-OWQ"/>
+                            <constraint firstItem="oq8-oR-Ds7" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="-49" id="K29-le-Qv9"/>
                             <constraint firstAttribute="leading" secondItem="AE8-7n-rEy" secondAttribute="trailing" constant="-98" id="Pad-54-rsG"/>
                             <constraint firstItem="etT-2a-LTl" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="trailing" constant="-98" id="TSJ-OC-uCb"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="etT-2a-LTl" secondAttribute="bottom" constant="10" id="TTS-zL-t7m"/>
+                            <constraint firstItem="oq8-oR-Ds7" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="49" id="YN0-SU-4cd"/>
                             <constraint firstItem="etT-2a-LTl" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="bottom" constant="-99" id="ai3-D4-vZO"/>
                             <constraint firstItem="oq8-oR-Ds7" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="bottom" constant="-98" id="bae-xY-b2k"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="AE8-7n-rEy" secondAttribute="bottom" constant="10" id="dpu-jJ-zXi"/>
@@ -384,6 +386,6 @@
         <image name="SCAN-ICON" width="225" height="225"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="x3g-MX-Qsd"/>
+        <segue reference="WGV-Kn-R0U"/>
     </inferredMetricsTieBreakers>
 </document>
