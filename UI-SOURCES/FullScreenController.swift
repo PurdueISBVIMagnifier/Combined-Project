@@ -78,14 +78,26 @@ class FullScreenController: UIViewController, QRCodeReaderViewControllerDelegate
     @IBOutlet weak var wkScanned: WKWebView!
     
      private func GoButton(result: String) {
-        let url = NSURL (string: result)
+        //let url = NSURL (string: result)
         urlString = result
         print(result)
+        
+        wkScanned.loadHTMLString("""
+            <html>
+                <head>
+                    <title>EPICS MAGNIFIER</title>
+                </head>
+                <body>
+                    <img src= \(result)>
+                </body>
+            </html>
+            """, baseURL: nil)
+        
         //print()
         //Makes http Request
-        let request = NSURLRequest(url: url! as URL)
+        //let request = NSURLRequest(url: url! as URL)
         //Loads http request into webView on application
-        wkScanned.load(request as URLRequest)
+        //wkScanned.load(request as URLRequest)
     }
     
   @IBAction func scanInPreviewAction(_ sender: Any) {

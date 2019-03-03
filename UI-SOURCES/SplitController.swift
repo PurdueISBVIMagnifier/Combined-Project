@@ -50,13 +50,24 @@ class SplitController: UIViewController, UINavigationControllerDelegate, UIImage
     
         if(urlText != nil) {
             print(urlText!)
-            let url = NSURL (string: urlText!)
+            splitWebView.loadHTMLString("""
+                <html>
+                    <head>
+                        <title>EPICS MAGNIFIER</title>
+                    </head>
+                    <body>
+                        <img src= \(urlText ?? "No URL")>
+                    </body>
+                </html>
+                """, baseURL: nil)
+            
+            //let url = NSURL (string: urlText!)
         
             //Makes http Request
-            let request = NSURLRequest(url: url! as URL)
+            //let request = NSURLRequest(url: url! as URL)
             
             //Loads http request into webView on application
-            splitWebView.load(request as URLRequest)
+            //splitWebView.load(request as URLRequest)
         }
     }
     
