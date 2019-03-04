@@ -92,12 +92,6 @@ class FullScreenController: UIViewController, QRCodeReaderViewControllerDelegate
                 </body>
             </html>
             """, baseURL: nil)
-        
-        //print()
-        //Makes http Request
-        //let request = NSURLRequest(url: url! as URL)
-        //Loads http request into webView on application
-        //wkScanned.load(request as URLRequest)
     }
     
   @IBAction func scanInPreviewAction(_ sender: Any) {
@@ -194,8 +188,6 @@ class FullScreenController: UIViewController, QRCodeReaderViewControllerDelegate
             snapshotView.removeFromSuperview()
         }
     }
-    
-    
     
     //PASSES THE SCREENSHOT TO THE OTHER VIEW CONTROLLER
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {

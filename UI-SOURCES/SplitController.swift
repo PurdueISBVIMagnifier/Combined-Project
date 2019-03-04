@@ -60,14 +60,6 @@ class SplitController: UIViewController, UINavigationControllerDelegate, UIImage
                     </body>
                 </html>
                 """, baseURL: nil)
-            
-            //let url = NSURL (string: urlText!)
-        
-            //Makes http Request
-            //let request = NSURLRequest(url: url! as URL)
-            
-            //Loads http request into webView on application
-            //splitWebView.load(request as URLRequest)
         }
     }
     
@@ -80,7 +72,7 @@ class SplitController: UIViewController, UINavigationControllerDelegate, UIImage
         self.present(image, animated: true, completion: nil)
     }
     
-    private func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey: Any]) {
+    func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey: Any]) {
         //UNWRAPS THE OPTION UIIMAGE VALUE
         if let image = info[UIImagePickerController.InfoKey.originalImage] as? UIImage {
             splitImageView.image = image
