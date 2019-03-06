@@ -85,6 +85,7 @@ class SplitController: UIViewController, UINavigationControllerDelegate, UIImage
     
     //DISMISS CODE
     @IBAction func returnBPressed(_ sender: Any) {
+        
         self.dismiss(animated: true, completion: nil)
     }
     

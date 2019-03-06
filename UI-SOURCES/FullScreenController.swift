@@ -150,58 +150,21 @@ class FullScreenController: UIViewController, QRCodeReaderViewControllerDelegate
     }
     
     func captureScreenshot() {
-        showScreenshotEffect()
-        let layer = UIApplication.shared.keyWindow!.layer
-        let scale = UIScreen.main.scale
-        
-        // Creates UIImage of same size as view
-        UIGraphicsBeginImageContextWithOptions(layer.frame.size, false, scale);
-        layer.render(in: UIGraphicsGetCurrentContext()!)
-        
-        //Save screen shot to photos
-        screenShot = UIGraphicsGetImageFromCurrentImageContext()
-        UIGraphicsEndImageContext()
-        UIImageWriteToSavedPhotosAlbum(screenShot!, nil, nil, nil)
-    }
-    
-    //Animation for Screen Shot
-    func showScreenshotEffect() {
-        let snapshotView = UIView()
-        snapshotView.translatesAutoresizingMaskIntoConstraints = false
-        view.addSubview(snapshotView)
-        
-        let constraints:[NSLayoutConstraint] =
-            [
-                snapshotView.topAnchor.constraint(equalTo: view.topAnchor),
-                snapshotView.leadingAnchor.constraint(equalTo: view.leadingAnchor),
-                snapshotView.trailingAnchor.constraint(equalTo: view.trailingAnchor),
-                snapshotView.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor)
-            ]
-        
-        NSLayoutConstraint.activate(constraints)
-        
-        snapshotView.backgroundColor = UIColor.white
-        
-        UIView.animate(withDuration: 0.6, animations: {
-                snapshotView.alpha = 0
-        }) { _ in
-            snapshotView.removeFromSuperview()
+        wkScanned.takeSnapshot(with: nil) { image, error in
+            if let image = image {
+                self.screenShot = image
+                print("Got snap")
+                
+            } else {
+                print("failed")
+            }
         }
     }
     
     //PASSES THE SCREENSHOT TO THE OTHER VIEW CONTROLLER
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "screenShotToSV" {
-            let layer = UIApplication.shared.keyWindow!.layer
-            let scale = UIScreen.main.scale
-            
-            //Creates UIImage of same size as view
-            UIGraphicsBeginImageContextWithOptions(layer.frame.size, false, scale);
-            layer.render(in: UIGraphicsGetCurrentContext()!)
-            
-            //Capture Shot
-            screenShot = UIGraphicsGetImageFromCurrentImageContext()
-            UIGraphicsEndImageContext()
+            captureScreenshot()
             
             let destinationVC = segue.destination as! SplitController
             destinationVC.sSImage = screenShot
