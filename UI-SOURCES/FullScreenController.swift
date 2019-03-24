@@ -78,9 +78,8 @@ class FullScreenController: UIViewController, QRCodeReaderViewControllerDelegate
     @IBOutlet weak var wkScanned: WKWebView!
     
      private func GoButton(result: String) {
-        //let url = NSURL (string: result)
         urlString = result
-        print(result)
+        
         
         wkScanned.loadHTMLString("""
             <html>
@@ -89,6 +88,20 @@ class FullScreenController: UIViewController, QRCodeReaderViewControllerDelegate
                 </head>
                 <body>
                     <img src= \(result)>
+                </body>
+            </html>
+            """, baseURL: nil)
+        
+    }
+    
+    func reloadStream(urlText : String) {
+        wkScanned.loadHTMLString("""
+            <html>
+                <head>
+                    <title>EPICS MAGNIFIER</title>
+                </head>
+                <body>
+                    <img src= \(urlText)>
                 </body>
             </html>
             """, baseURL: nil)
@@ -183,4 +196,15 @@ class FullScreenController: UIViewController, QRCodeReaderViewControllerDelegate
     @IBAction func menuButtonPressed(_ sender: Any) {
         performSegue(withIdentifier: "vcToMenu", sender: self)
     }
+    @IBAction func refreshButton(_ sender: Any) {
+        if urlString != nil {
+            reloadStream(urlText: urlString!)
+        }        
+    }
+    
+    
+    
+    
 }
+
+

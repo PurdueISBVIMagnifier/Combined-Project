@@ -6,7 +6,7 @@ class MenuController: UIViewController
     var ipText: String? //The string that is passed to the select device controller
     
     @IBAction func returntoMain(_ sender: Any) {
-         self.dismiss(animated: true, completion: nil)
+        self.dismiss(animated: true, completion: nil)
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {

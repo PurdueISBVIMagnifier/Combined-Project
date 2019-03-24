@@ -103,6 +103,5 @@ class SplitController: UIViewController, UINavigationControllerDelegate, UIImage
         performSegue(withIdentifier: "halfToFull", sender: self)
     }
     
-    
 }
 
