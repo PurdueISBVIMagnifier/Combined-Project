@@ -276,16 +276,6 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="u3J-Ld-kbJ"/>
                     </view>
-                    <connections>
-                        <outlet property="fsButton" destination="dvI-Me-5Sq" id="toi-gl-Eve"/>
-                        <outlet property="fsbutton" destination="dvI-Me-5Sq" id="euf-st-ag5"/>
-                        <outlet property="rvButton" destination="wIk-PR-qAf" id="eH7-sJ-HIP"/>
-                        <outlet property="rvbutton" destination="wIk-PR-qAf" id="ndO-gJ-RFP"/>
-                        <outlet property="ssButton" destination="7op-nz-MKK" id="31s-CZ-mth"/>
-                        <outlet property="ssbutton" destination="7op-nz-MKK" id="J5L-xt-jyU"/>
-                        <outlet property="umButton" destination="yip-fm-Iqk" id="dJv-h7-4XT"/>
-                        <outlet property="umbutton" destination="yip-fm-Iqk" id="Ncd-JQ-3Yy"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hMF-bg-CyI" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -408,6 +398,6 @@
         <image name="SCAN-ICON" width="225" height="225"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="x3g-MX-Qsd"/>
+        <segue reference="WGV-Kn-R0U"/>
     </inferredMetricsTieBreakers>
 </document>
