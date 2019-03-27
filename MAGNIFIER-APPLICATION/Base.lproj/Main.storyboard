@@ -276,6 +276,12 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="u3J-Ld-kbJ"/>
                     </view>
+                    <connections>
+                        <outlet property="fsButton" destination="dvI-Me-5Sq" id="u5m-ed-6U0"/>
+                        <outlet property="rvButton" destination="wIk-PR-qAf" id="RBc-2v-1Im"/>
+                        <outlet property="ssButton" destination="7op-nz-MKK" id="9ph-b0-tSd"/>
+                        <outlet property="umButton" destination="yip-fm-Iqk" id="mIa-7q-XLI"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hMF-bg-CyI" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -398,6 +404,6 @@
         <image name="SCAN-ICON" width="225" height="225"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="WGV-Kn-R0U"/>
+        <segue reference="x3g-MX-Qsd"/>
     </inferredMetricsTieBreakers>
 </document>
