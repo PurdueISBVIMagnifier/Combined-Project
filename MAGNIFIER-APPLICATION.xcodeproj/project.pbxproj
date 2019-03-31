@@ -30,7 +30,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		54DB76C12210BAA100AB0AC2 /* MAGNIFIER-APPLICATION.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "MAGNIFIER-APPLICATION.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		54DB76C12210BAA100AB0AC2 /* EPICS Magnifier.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "EPICS Magnifier.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		54DB76C42210BAA100AB0AC2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		54DB76C92210BAA100AB0AC2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		54DB76CB2210BAA100AB0AC2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -79,7 +79,7 @@
 		54DB76C22210BAA100AB0AC2 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				54DB76C12210BAA100AB0AC2 /* MAGNIFIER-APPLICATION.app */,
+				54DB76C12210BAA100AB0AC2 /* EPICS Magnifier.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -153,7 +153,7 @@
 			);
 			name = "MAGNIFIER-APPLICATION";
 			productName = "MAGNIFIER-APPLICATION";
-			productReference = 54DB76C12210BAA100AB0AC2 /* MAGNIFIER-APPLICATION.app */;
+			productReference = 54DB76C12210BAA100AB0AC2 /* EPICS Magnifier.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -377,9 +377,9 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.rosaton.MAGNIFIER-APPLICATION";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "EPICS Magnifier";
 				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 2;
 			};
 			name = Debug;
 		};
@@ -395,9 +395,9 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.rosaton.MAGNIFIER-APPLICATION";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "EPICS Magnifier";
 				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 2;
 			};
 			name = Release;
 		};

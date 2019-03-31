@@ -3,7 +3,6 @@ import UIKit
 import WebKit
 
 class FullScreenController: UIViewController, QRCodeReaderViewControllerDelegate {
-   
     //VAR INITIALIZATIONS
     var screenShot: UIImage? //Screenshot from the screenshot button
     var urlString: String? = "" //String for the URL that is sent to the select device controller
@@ -201,10 +200,4 @@ class FullScreenController: UIViewController, QRCodeReaderViewControllerDelegate
             reloadStream(urlText: urlString!)
         }        
     }
-    
-    
-    
-    
 }
-
-
