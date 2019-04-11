@@ -10,7 +10,7 @@ class HelpView: UIViewController {
         super.viewDidLoad()
         
         //IP STREAM TO SPLIT VIEW
-        let path = Bundle.main.path(forResource: "Manual", ofType: "pdf")
+        let path = Bundle.main.path(forResource: "EPICS Magnifier Manual", ofType: "pdf")
         let url = URL(fileURLWithPath: path!)
         let request = URLRequest(url: url)
         helpWebView.load(request)

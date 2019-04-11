@@ -26,7 +26,7 @@
 		54DB76F42210BB1900AB0AC2 /* FullScreenController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54DB76EF2210BB1900AB0AC2 /* FullScreenController.swift */; };
 		54DB76F52210BB1900AB0AC2 /* SplitController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54DB76F02210BB1900AB0AC2 /* SplitController.swift */; };
 		54DB76F62210BB1900AB0AC2 /* MenuController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54DB76F12210BB1900AB0AC2 /* MenuController.swift */; };
-		54DB76F92210BB2A00AB0AC2 /* Manual.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 54DB76F82210BB2A00AB0AC2 /* Manual.pdf */; };
+		54FB8A8C225E67CA00895631 /* EPICS Magnifier Manual.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 54FB8A8B225E67CA00895631 /* EPICS Magnifier Manual.pdf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -52,7 +52,7 @@
 		54DB76EF2210BB1900AB0AC2 /* FullScreenController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FullScreenController.swift; sourceTree = "<group>"; };
 		54DB76F02210BB1900AB0AC2 /* SplitController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SplitController.swift; sourceTree = "<group>"; };
 		54DB76F12210BB1900AB0AC2 /* MenuController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuController.swift; sourceTree = "<group>"; };
-		54DB76F82210BB2A00AB0AC2 /* Manual.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = Manual.pdf; sourceTree = "<group>"; };
+		54FB8A8B225E67CA00895631 /* EPICS Magnifier Manual.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "EPICS Magnifier Manual.pdf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -130,7 +130,7 @@
 		54DB76F72210BB2A00AB0AC2 /* USER-MANUAL */ = {
 			isa = PBXGroup;
 			children = (
-				54DB76F82210BB2A00AB0AC2 /* Manual.pdf */,
+				54FB8A8B225E67CA00895631 /* EPICS Magnifier Manual.pdf */,
 			);
 			name = "USER-MANUAL";
 			path = "UI-SOURCES/USER-MANUAL";
@@ -194,7 +194,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				54DB76F92210BB2A00AB0AC2 /* Manual.pdf in Resources */,
+				54FB8A8C225E67CA00895631 /* EPICS Magnifier Manual.pdf in Resources */,
 				54DB76CF2210BAA100AB0AC2 /* LaunchScreen.storyboard in Resources */,
 				54DB76CC2210BAA100AB0AC2 /* Assets.xcassets in Resources */,
 				54DB76CA2210BAA100AB0AC2 /* Main.storyboard in Resources */,
